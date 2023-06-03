@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/input.text.css";
 
 class Contact extends React.Component {
   constructor() {
@@ -28,7 +27,7 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <div id="contact-container" className="cards">
+        <div id="contact-container" className="form">
           <h4>Contact</h4>
 
           <form onSubmit={this.handleSubmit}>
@@ -66,7 +65,7 @@ class Contact extends React.Component {
         </div>
 
         {this.state.isSubmitted && (
-          <section id="contact-text">
+          <section id="contact-text" className="text">
             <DisplayContact inputs={this.state} />
           </section>
         )}

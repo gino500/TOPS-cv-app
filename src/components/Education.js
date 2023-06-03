@@ -28,7 +28,7 @@ class Education extends React.Component {
   render() {
     return (
       <>
-        <div id="education-container" className="cards">
+        <div id="education-container" className="form">
           <h4>Education</h4>
 
           <form onSubmit={this.handleSubmit}>
@@ -64,7 +64,7 @@ class Education extends React.Component {
         </div>
 
         {this.state.isSubmitted && (
-          <section id="education-text">
+          <section id="education-text" className="text">
             <DisplayEducation inputs={this.state} />
           </section>
         )}

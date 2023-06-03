@@ -1,2 +1,6 @@
-#contact-text {
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5%;
 }
